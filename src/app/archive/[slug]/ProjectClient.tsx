@@ -101,11 +101,11 @@ export default function ProjectPage() {
 
       {/* Full Width Images with Parallax */}
       {project.images.length > 0 && (
-        <div className="w-full">
+        <div className="w-full space-y-16 py-16">
           {project.images.slice(1).map((image, i) => (
             <motion.div
               key={i}
-              className="w-full aspect-[16/9] relative mb-0 cursor-target overflow-hidden"
+              className="w-full aspect-[16/9] relative cursor-target overflow-hidden"
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, margin: "-10%" }}
